@@ -3,20 +3,23 @@
     <head>
         <title>Boat Race</title>
         
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,height=device-height" />
         <script src="scripts/main.js"></script>
     </head>
     
-    <div style="font:15px Verdana;margin:4px;display:inline-block;float:right;background:white;border:1px solid gray;border-radius:3px;padding:4px;background:radial-gradient(white, lightgray)">
-        <button id="showinfo">Brief Overview</button><br />
-        Boat Dimensions: <input style="font:14px Verdana;width:100px;text-align:center;" id="dimensions" value="5x4x1" /> (ft^3)<br />
-        
-        Passenger 1: <input type="number" style="font:14px Verdana;width:70px;text-align:center;" id="gw" value="200" /> (lbs)<br />
-        Passenger 2: <input type="number" style="font:14px Verdana;width:70px;text-align:center;" id="sw" value="120" /> (lbs)<br />
-        Boat: <input type="number" style="font:14px Verdana;width:70px;text-align:center;" id="bw" value="30" /> (lbs)<br />
-        Leeway: <input type="number" style="font:14px Verdana;width:70px;text-align:center;" id="ew" value="200" /> (lbs)
-    </div>
     <body style="background:black">
-        
+        <div style="font:15px Verdana;margin:4px;display:inline-block;float:right;background:white;border:1px solid gray;border-radius:3px;padding:4px;background:radial-gradient(white, lightgray);max-width:330px">
+            <button id="showinfo">Brief Overview</button>
+            <select id="units" style="font:14px Verdana;float:right"><option value="ft">ft / lb</option><option value="m">m / kg</option></select><br />
+            Boat Dimensions: <input style="font:14px Verdana;width:100px;text-align:center;" id="dimensions" value="5x4x1" /> <span class="ulen">(ft)</span> LxWxH<br />
+            
+            Passenger 1: <input type="number" style="font:14px Verdana;width:70px;text-align:center;" id="gw" value="200" /> <span class="uwt">(lbs)</span><br />
+            Passenger 2: <input type="number" style="font:14px Verdana;width:70px;text-align:center;" id="sw" value="120" /> <span class="uwt">(lbs)</span><br />
+            Boat: <input type="number" style="font:14px Verdana;width:70px;text-align:center;" id="bw" value="30" /> <span class="uwt">(lbs)</span><br />
+            Leeway: <input type="number" style="font:14px Verdana;width:70px;text-align:center;" id="ew" value="200" /> <span class="uwt">(lbs)</span>
+            
+            <div id="why" style="font:12px Verdana;margin-top:6px;border-top:1px solid gray;padding-top:4px;line-height:1.5"></div>
+        </div>
     </body>
 </html>
